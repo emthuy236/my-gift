@@ -24,8 +24,10 @@ const Home = () => {
 
     return (
         <section className="home">
-           <div className="overlay"></div> 
-            <video autoPlay loop src={video}></video>
+           {/* <div className="overlay"></div>  */}
+            <video autoPlay loop controls>
+            <source src={video} type="video/mp4"/>
+            </video>
 
             <div className="homeContent container">
                 {/* <div className="textDiv">
